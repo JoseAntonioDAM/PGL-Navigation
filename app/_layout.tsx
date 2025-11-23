@@ -1,4 +1,3 @@
-// app/_layout.tsx
 import { Drawer } from 'expo-router/drawer';
 import { Ionicons } from '@expo/vector-icons';
 
@@ -20,6 +19,15 @@ export default function RootLayout() {
           title: 'Mi Portfolio',
           drawerIcon: ({ size, color }) => (
             <Ionicons name="person" size={size} color={color} />
+          ),
+        }}
+      />
+      <Drawer.Screen 
+        name="counter" 
+        options={{
+          title: 'Contador',
+          drawerIcon: ({ size, color }) => (
+            <Ionicons name="calculator" size={size} color={color} />
           ),
         }}
       />
